@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fc25259-539c-4587-bdf4-2cb708346b01" name="Default" comment="" />
+    <list default="true" id="4fc25259-539c-4587-bdf4-2cb708346b01" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ContigHighestChancePlayer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ContigLowestChancePlayer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ContigPlayer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ContigWallPlayer.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Contig/Contig$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Contig/Contig$IndexPair.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Contig/Contig.class" afterPath="$PROJECT_DIR$/out/production/Contig/Contig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Contig.java" afterPath="$PROJECT_DIR$/src/Contig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ContigRandomPlayer.java" afterPath="$PROJECT_DIR$/src/ContigRandomPlayer.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,60 +24,45 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Contig.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Contig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Contig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+            <state relative-caret-position="195">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#Contig#0" expanded="false" />
+                <element signature="method#Contig#0;class#Contig#0" expanded="false" />
                 <element signature="docComment;method#createGameBoard#0;class#Contig#0" expanded="false" />
                 <element signature="method#createGameBoard#0;class#Contig#0" expanded="false" />
                 <element signature="docComment;method#printBoard#0;class#Contig#0" expanded="false" />
                 <element signature="method#printBoard#0;class#Contig#0" expanded="false" />
-                <element signature="docComment;method#playTurn#0;class#Contig#0" expanded="false" />
-                <element signature="method#playFirstTurn#0;class#Contig#0" expanded="false" />
-                <element signature="method#cleanUpListAndConvertToInt#0;class#Contig#0" expanded="false" />
-                <element signature="e#3473#3482#0" expanded="true" />
-                <element signature="method#findBestValidMove#0;class#Contig#0" expanded="false" />
-                <element signature="method#getBestMoves#0;class#Contig#0" expanded="false" />
-                <element signature="e#5027#5038#0" expanded="true" />
-                <element signature="class#5303:5712" expanded="false" />
                 <element signature="method#getScorePotential#0;class#Contig#0" expanded="false" />
                 <element signature="method#checkTop#0;class#Contig#0" expanded="false" />
                 <element signature="method#checkBottom#0;class#Contig#0" expanded="false" />
-                <element signature="method#getValidMoves#0;class#Contig#0" expanded="false" />
-                <element signature="e#7592#7600#0" expanded="true" />
-                <element signature="e#7661#7669#0" expanded="true" />
-                <element signature="e#7730#7738#0" expanded="true" />
-                <element signature="e#7799#7807#0" expanded="true" />
-                <element signature="method#compute#0;class#Contig#0" expanded="false" />
-                <element signature="e#8425#8433#0" expanded="true" />
-                <element signature="docComment;method#findIndexByNumber#0;class#Contig#0" expanded="false" />
-                <element signature="method#findIndexByNumber#0;class#Contig#0" expanded="false" />
-                <element signature="docComment;class#IndexPair#0;class#Contig#0" expanded="false" />
-                <element signature="class#IndexPair#0;class#Contig#0" expanded="false" />
+                <element signature="method#getScorePotentialDebug#0;class#Contig#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContigRandomPlayer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ContigRandomPlayer.java">
+      <file leaf-file-name="ContigPlayer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ContigPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContigNumbers.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ContigNumbers.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="11" lean-forward="true" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-              <folding />
+            <state relative-caret-position="220">
+              <caret line="73" column="25" lean-forward="true" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#ContigPlayer#0" expanded="false" />
+                <element signature="method#playTurn#0;class#ContigPlayer#0" expanded="false" />
+                <element signature="method#playFirstTurn#0;class#ContigPlayer#0" expanded="false" />
+                <element signature="method#compute#0;class#ContigPlayer#0" expanded="false" />
+                <element signature="method#findBestValidMove#0;class#ContigPlayer#0" expanded="false" />
+                <element signature="method#getBestMoves#0;class#ContigPlayer#0" expanded="false" />
+                <element signature="class#5999:6408" expanded="false" />
+                <element signature="method#compare#0;class#5999:6408" expanded="false" />
+                <element signature="method#findIndexByNumber#0;class#ContigPlayer#0" expanded="false" />
+                <element signature="class#IndexPair#0;class#ContigPlayer#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,8 +80,18 @@
     <findStrings>
       <find>computer</find>
       <find>getscorepo</find>
+      <find>system.out</find>
+      <find>getBest</find>
       <find>system</find>
+      <find>getPlayer</find>
+      <find>cleanUpL</find>
+      <find>play</find>
+      <find>1st</find>
+      <find>2</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -97,8 +103,13 @@
       <list>
         <option value="$PROJECT_DIR$/src/ContigNumbers" />
         <option value="$PROJECT_DIR$/ContigEquations.txt" />
-        <option value="$PROJECT_DIR$/src/Contig.java" />
+        <option value="$PROJECT_DIR$/src/ContigNormalPlayer.java" />
         <option value="$PROJECT_DIR$/src/ContigRandomPlayer.java" />
+        <option value="$PROJECT_DIR$/src/ContigLowestChancePlayer.java" />
+        <option value="$PROJECT_DIR$/src/ContigPlayer.java" />
+        <option value="$PROJECT_DIR$/src/ContigHighestChancePlayer.java" />
+        <option value="$PROJECT_DIR$/src/ContigWallPlayer.java" />
+        <option value="$PROJECT_DIR$/src/Contig.java" />
       </list>
     </option>
   </component>
@@ -110,6 +121,7 @@
     <option name="width" value="1440" />
     <option name="height" value="811" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -125,6 +137,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -153,9 +167,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -185,6 +197,21 @@
     <configuration default="false" name="Contig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Contig" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Contig" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ContigHighestChancePlayer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="ContigHighestChancePlayer" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -401,12 +428,14 @@
       <listeners />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.Contig" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ContigHighestChancePlayer" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Application.Contig" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ContigHighestChancePlayer" />
       </list>
     </recent_temporary>
   </component>
@@ -430,18 +459,19 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962447" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4231405" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.90820587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6689847" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26037195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27825466" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -452,7 +482,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962447" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962447" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -462,7 +491,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -477,40 +506,54 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Contig#0" expanded="false" />
+            <element signature="method#Contig#0;class#Contig#0" expanded="false" />
             <element signature="docComment;method#createGameBoard#0;class#Contig#0" expanded="false" />
             <element signature="method#createGameBoard#0;class#Contig#0" expanded="false" />
             <element signature="docComment;method#printBoard#0;class#Contig#0" expanded="false" />
             <element signature="method#printBoard#0;class#Contig#0" expanded="false" />
-            <element signature="docComment;method#playTurn#0;class#Contig#0" expanded="false" />
-            <element signature="method#playFirstTurn#0;class#Contig#0" expanded="false" />
-            <element signature="method#cleanUpListAndConvertToInt#0;class#Contig#0" expanded="false" />
-            <element signature="e#3473#3482#0" expanded="true" />
-            <element signature="method#findBestValidMove#0;class#Contig#0" expanded="false" />
-            <element signature="method#getBestMoves#0;class#Contig#0" expanded="false" />
-            <element signature="e#5027#5038#0" expanded="true" />
-            <element signature="class#5303:5712" expanded="false" />
             <element signature="method#getScorePotential#0;class#Contig#0" expanded="false" />
             <element signature="method#checkTop#0;class#Contig#0" expanded="false" />
             <element signature="method#checkBottom#0;class#Contig#0" expanded="false" />
-            <element signature="method#getValidMoves#0;class#Contig#0" expanded="false" />
-            <element signature="e#7592#7600#0" expanded="true" />
-            <element signature="e#7661#7669#0" expanded="true" />
-            <element signature="e#7730#7738#0" expanded="true" />
-            <element signature="e#7799#7807#0" expanded="true" />
-            <element signature="method#compute#0;class#Contig#0" expanded="false" />
-            <element signature="e#8425#8433#0" expanded="true" />
-            <element signature="docComment;method#findIndexByNumber#0;class#Contig#0" expanded="false" />
-            <element signature="method#findIndexByNumber#0;class#Contig#0" expanded="false" />
-            <element signature="docComment;class#IndexPair#0;class#Contig#0" expanded="false" />
-            <element signature="class#IndexPair#0;class#Contig#0" expanded="false" />
+            <element signature="method#getScorePotentialDebug#0;class#Contig#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ContigNumbers.txt">
+    <entry file="file://$PROJECT_DIR$/src/ContigPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="122" lean-forward="false" selection-start-line="0" selection-start-column="122" selection-end-line="0" selection-end-column="122" />
+        <state relative-caret-position="825">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#playTurn#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#playFirstTurn#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#compute#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#findBestValidMove#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#getBestMoves#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="class#5999:6408" expanded="false" />
+            <element signature="method#compare#0;class#5999:6408" expanded="false" />
+            <element signature="method#findIndexByNumber#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="class#IndexPair#0;class#ContigPlayer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContigHighestChancePlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="61" column="28" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="61" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setProbArray#0;class#ContigHighestChancePlayer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContigLowestChancePlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -521,32 +564,225 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Contig#0" expanded="false" />
+            <element signature="method#Contig#0;class#Contig#0" expanded="false" />
             <element signature="docComment;method#createGameBoard#0;class#Contig#0" expanded="false" />
             <element signature="method#createGameBoard#0;class#Contig#0" expanded="false" />
             <element signature="docComment;method#printBoard#0;class#Contig#0" expanded="false" />
             <element signature="method#printBoard#0;class#Contig#0" expanded="false" />
-            <element signature="docComment;method#playTurn#0;class#Contig#0" expanded="false" />
-            <element signature="method#playFirstTurn#0;class#Contig#0" expanded="false" />
-            <element signature="method#cleanUpListAndConvertToInt#0;class#Contig#0" expanded="false" />
-            <element signature="e#3473#3482#0" expanded="true" />
-            <element signature="method#findBestValidMove#0;class#Contig#0" expanded="false" />
-            <element signature="method#getBestMoves#0;class#Contig#0" expanded="false" />
-            <element signature="e#5027#5038#0" expanded="true" />
-            <element signature="class#5303:5712" expanded="false" />
             <element signature="method#getScorePotential#0;class#Contig#0" expanded="false" />
             <element signature="method#checkTop#0;class#Contig#0" expanded="false" />
             <element signature="method#checkBottom#0;class#Contig#0" expanded="false" />
-            <element signature="method#getValidMoves#0;class#Contig#0" expanded="false" />
-            <element signature="e#7592#7600#0" expanded="true" />
-            <element signature="e#7661#7669#0" expanded="true" />
-            <element signature="e#7730#7738#0" expanded="true" />
-            <element signature="e#7799#7807#0" expanded="true" />
-            <element signature="method#compute#0;class#Contig#0" expanded="false" />
-            <element signature="e#8425#8433#0" expanded="true" />
-            <element signature="docComment;method#findIndexByNumber#0;class#Contig#0" expanded="false" />
-            <element signature="method#findIndexByNumber#0;class#Contig#0" expanded="false" />
-            <element signature="docComment;class#IndexPair#0;class#Contig#0" expanded="false" />
-            <element signature="class#IndexPair#0;class#Contig#0" expanded="false" />
+            <element signature="method#getScorePotentialDebug#0;class#Contig#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContigPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#playTurn#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#playFirstTurn#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#compute#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#findBestValidMove#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#getBestMoves#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="class#5999:6408" expanded="false" />
+            <element signature="method#compare#0;class#5999:6408" expanded="false" />
+            <element signature="method#findIndexByNumber#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="class#IndexPair#0;class#ContigPlayer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContigRandomPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Contig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Contig#0" expanded="false" />
+            <element signature="method#Contig#0;class#Contig#0" expanded="false" />
+            <element signature="docComment;method#createGameBoard#0;class#Contig#0" expanded="false" />
+            <element signature="method#createGameBoard#0;class#Contig#0" expanded="false" />
+            <element signature="docComment;method#printBoard#0;class#Contig#0" expanded="false" />
+            <element signature="method#printBoard#0;class#Contig#0" expanded="false" />
+            <element signature="method#getScorePotential#0;class#Contig#0" expanded="false" />
+            <element signature="method#checkTop#0;class#Contig#0" expanded="false" />
+            <element signature="method#checkBottom#0;class#Contig#0" expanded="false" />
+            <element signature="method#getScorePotentialDebug#0;class#Contig#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContigPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="126" column="41" lean-forward="false" selection-start-line="126" selection-start-column="41" selection-end-line="126" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#playTurn#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#playFirstTurn#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#compute#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#findBestValidMove#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#getBestMoves#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="class#5999:6408" expanded="false" />
+            <element signature="method#compare#0;class#5999:6408" expanded="false" />
+            <element signature="method#findIndexByNumber#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="class#IndexPair#0;class#ContigPlayer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContigRandomPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Contig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Contig#0" expanded="false" />
+            <element signature="method#Contig#0;class#Contig#0" expanded="false" />
+            <element signature="docComment;method#createGameBoard#0;class#Contig#0" expanded="false" />
+            <element signature="method#createGameBoard#0;class#Contig#0" expanded="false" />
+            <element signature="docComment;method#printBoard#0;class#Contig#0" expanded="false" />
+            <element signature="method#printBoard#0;class#Contig#0" expanded="false" />
+            <element signature="method#getScorePotential#0;class#Contig#0" expanded="false" />
+            <element signature="method#checkTop#0;class#Contig#0" expanded="false" />
+            <element signature="method#checkBottom#0;class#Contig#0" expanded="false" />
+            <element signature="method#getScorePotentialDebug#0;class#Contig#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContigPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="58" column="82" lean-forward="false" selection-start-line="58" selection-start-column="82" selection-end-line="58" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#playTurn#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#playFirstTurn#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#compute#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#findBestValidMove#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#getBestMoves#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="class#5999:6408" expanded="false" />
+            <element signature="method#compare#0;class#5999:6408" expanded="false" />
+            <element signature="method#findIndexByNumber#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="class#IndexPair#0;class#ContigPlayer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContigRandomPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="52" lean-forward="false" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ContigNumbers.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Contig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Contig#0" expanded="false" />
+            <element signature="method#Contig#0;class#Contig#0" expanded="false" />
+            <element signature="docComment;method#createGameBoard#0;class#Contig#0" expanded="false" />
+            <element signature="method#createGameBoard#0;class#Contig#0" expanded="false" />
+            <element signature="docComment;method#printBoard#0;class#Contig#0" expanded="false" />
+            <element signature="method#printBoard#0;class#Contig#0" expanded="false" />
+            <element signature="method#getScorePotential#0;class#Contig#0" expanded="false" />
+            <element signature="method#checkTop#0;class#Contig#0" expanded="false" />
+            <element signature="method#checkBottom#0;class#Contig#0" expanded="false" />
+            <element signature="method#getScorePotentialDebug#0;class#Contig#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContigRandomPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ContigNumbers.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="true" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContigPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#playTurn#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#playFirstTurn#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#compute#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#findBestValidMove#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#getBestMoves#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="class#5999:6408" expanded="false" />
+            <element signature="method#compare#0;class#5999:6408" expanded="false" />
+            <element signature="method#findIndexByNumber#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="class#IndexPair#0;class#ContigPlayer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Contig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Contig#0" expanded="false" />
+            <element signature="method#Contig#0;class#Contig#0" expanded="false" />
+            <element signature="docComment;method#createGameBoard#0;class#Contig#0" expanded="false" />
+            <element signature="method#createGameBoard#0;class#Contig#0" expanded="false" />
+            <element signature="docComment;method#printBoard#0;class#Contig#0" expanded="false" />
+            <element signature="method#printBoard#0;class#Contig#0" expanded="false" />
+            <element signature="method#getScorePotential#0;class#Contig#0" expanded="false" />
+            <element signature="method#checkTop#0;class#Contig#0" expanded="false" />
+            <element signature="method#checkBottom#0;class#Contig#0" expanded="false" />
+            <element signature="method#getScorePotentialDebug#0;class#Contig#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -555,7 +791,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="122" lean-forward="false" selection-start-line="0" selection-start-column="122" selection-end-line="0" selection-end-column="122" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Contig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Contig#0" expanded="false" />
+            <element signature="method#Contig#0;class#Contig#0" expanded="false" />
+            <element signature="docComment;method#createGameBoard#0;class#Contig#0" expanded="false" />
+            <element signature="method#createGameBoard#0;class#Contig#0" expanded="false" />
+            <element signature="docComment;method#printBoard#0;class#Contig#0" expanded="false" />
+            <element signature="method#printBoard#0;class#Contig#0" expanded="false" />
+            <element signature="method#getScorePotential#0;class#Contig#0" expanded="false" />
+            <element signature="method#checkTop#0;class#Contig#0" expanded="false" />
+            <element signature="method#checkBottom#0;class#Contig#0" expanded="false" />
+            <element signature="method#getScorePotentialDebug#0;class#Contig#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ContigNumbers.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="122" lean-forward="false" selection-start-line="0" selection-start-column="122" selection-end-line="0" selection-end-column="122" />
         </state>
       </provider>
     </entry>
@@ -566,32 +827,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Contig#0" expanded="false" />
+            <element signature="method#Contig#0;class#Contig#0" expanded="false" />
             <element signature="docComment;method#createGameBoard#0;class#Contig#0" expanded="false" />
             <element signature="method#createGameBoard#0;class#Contig#0" expanded="false" />
             <element signature="docComment;method#printBoard#0;class#Contig#0" expanded="false" />
             <element signature="method#printBoard#0;class#Contig#0" expanded="false" />
-            <element signature="docComment;method#playTurn#0;class#Contig#0" expanded="false" />
-            <element signature="method#playFirstTurn#0;class#Contig#0" expanded="false" />
-            <element signature="method#cleanUpListAndConvertToInt#0;class#Contig#0" expanded="false" />
-            <element signature="e#3473#3482#0" expanded="true" />
-            <element signature="method#findBestValidMove#0;class#Contig#0" expanded="false" />
-            <element signature="method#getBestMoves#0;class#Contig#0" expanded="false" />
-            <element signature="e#5027#5038#0" expanded="true" />
-            <element signature="class#5303:5712" expanded="false" />
             <element signature="method#getScorePotential#0;class#Contig#0" expanded="false" />
             <element signature="method#checkTop#0;class#Contig#0" expanded="false" />
             <element signature="method#checkBottom#0;class#Contig#0" expanded="false" />
-            <element signature="method#getValidMoves#0;class#Contig#0" expanded="false" />
-            <element signature="e#7592#7600#0" expanded="true" />
-            <element signature="e#7661#7669#0" expanded="true" />
-            <element signature="e#7730#7738#0" expanded="true" />
-            <element signature="e#7799#7807#0" expanded="true" />
-            <element signature="method#compute#0;class#Contig#0" expanded="false" />
-            <element signature="e#8425#8433#0" expanded="true" />
-            <element signature="docComment;method#findIndexByNumber#0;class#Contig#0" expanded="false" />
-            <element signature="method#findIndexByNumber#0;class#Contig#0" expanded="false" />
-            <element signature="docComment;class#IndexPair#0;class#Contig#0" expanded="false" />
-            <element signature="class#IndexPair#0;class#Contig#0" expanded="false" />
+            <element signature="method#getScorePotentialDebug#0;class#Contig#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -600,7 +844,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="122" lean-forward="false" selection-start-line="0" selection-start-column="122" selection-end-line="0" selection-end-column="122" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ContigEquations.txt" />
+    <entry file="file://$PROJECT_DIR$/ContigNumbers.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -611,55 +862,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ContigEquations.txt" />
-    <entry file="file://$PROJECT_DIR$/ContigNumbers.txt">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="11" lean-forward="true" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+        <state relative-caret-position="136">
+          <caret line="58" column="19" lean-forward="false" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContigLowestChancePlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ContigRandomPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="76">
+          <caret line="17" column="101" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="101" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContigHighestChancePlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setProbArray#0;class#ContigHighestChancePlayer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContigWallPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="55" column="42" lean-forward="false" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Contig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        <state relative-caret-position="195">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Contig#0" expanded="false" />
+            <element signature="method#Contig#0;class#Contig#0" expanded="false" />
             <element signature="docComment;method#createGameBoard#0;class#Contig#0" expanded="false" />
             <element signature="method#createGameBoard#0;class#Contig#0" expanded="false" />
             <element signature="docComment;method#printBoard#0;class#Contig#0" expanded="false" />
             <element signature="method#printBoard#0;class#Contig#0" expanded="false" />
-            <element signature="docComment;method#playTurn#0;class#Contig#0" expanded="false" />
-            <element signature="method#playFirstTurn#0;class#Contig#0" expanded="false" />
-            <element signature="method#cleanUpListAndConvertToInt#0;class#Contig#0" expanded="false" />
-            <element signature="e#3473#3482#0" expanded="true" />
-            <element signature="method#findBestValidMove#0;class#Contig#0" expanded="false" />
-            <element signature="method#getBestMoves#0;class#Contig#0" expanded="false" />
-            <element signature="e#5027#5038#0" expanded="true" />
-            <element signature="class#5303:5712" expanded="false" />
             <element signature="method#getScorePotential#0;class#Contig#0" expanded="false" />
             <element signature="method#checkTop#0;class#Contig#0" expanded="false" />
             <element signature="method#checkBottom#0;class#Contig#0" expanded="false" />
-            <element signature="method#getValidMoves#0;class#Contig#0" expanded="false" />
-            <element signature="e#7592#7600#0" expanded="true" />
-            <element signature="e#7661#7669#0" expanded="true" />
-            <element signature="e#7730#7738#0" expanded="true" />
-            <element signature="e#7799#7807#0" expanded="true" />
-            <element signature="method#compute#0;class#Contig#0" expanded="false" />
-            <element signature="e#8425#8433#0" expanded="true" />
-            <element signature="docComment;method#findIndexByNumber#0;class#Contig#0" expanded="false" />
-            <element signature="method#findIndexByNumber#0;class#Contig#0" expanded="false" />
-            <element signature="docComment;class#IndexPair#0;class#Contig#0" expanded="false" />
-            <element signature="class#IndexPair#0;class#Contig#0" expanded="false" />
+            <element signature="method#getScorePotentialDebug#0;class#Contig#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContigPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="73" column="25" lean-forward="true" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#playTurn#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#playFirstTurn#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#compute#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#findBestValidMove#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="method#getBestMoves#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="class#5999:6408" expanded="false" />
+            <element signature="method#compare#0;class#5999:6408" expanded="false" />
+            <element signature="method#findIndexByNumber#0;class#ContigPlayer#0" expanded="false" />
+            <element signature="class#IndexPair#0;class#ContigPlayer#0" expanded="false" />
           </folding>
         </state>
       </provider>
