@@ -11,6 +11,7 @@ public class ContigWallPlayer extends ContigPlayer {
 
     public ContigWallPlayer() {
         super();
+        name = "Contig Wall Player";
     }
 
     public IndexPair findBestValidMove(ArrayList<IndexPair> bestMoves, HashSet<Integer> validMoves) {
@@ -29,7 +30,7 @@ public class ContigWallPlayer extends ContigPlayer {
 
             //Here we are adding each element to the list
             int findHighScores = counter;
-            while (bestMoves.get(findHighScores).curScorePotential == firstPair.curScorePotential) {
+            while (findHighScores < bestMoves.size() && bestMoves.get(findHighScores).curScorePotential == firstPair.curScorePotential) {
                 if (validMoves.contains(Contig.gameBoard[bestMoves.get(findHighScores).row][bestMoves.get(findHighScores).column])) {
                     listOfTiedTopScores.add(bestMoves.get(findHighScores));
                 }
@@ -49,7 +50,7 @@ public class ContigWallPlayer extends ContigPlayer {
     public IndexPair getWall(ArrayList<IndexPair> listOfTiedTopScores) {
         for (int i = 0; i < listOfTiedTopScores.size(); i++) {
             IndexPair cur = listOfTiedTopScores.get(i);
-            if (cur.row == 0 || cur.row == 7 || cur.column == 0 || cur.column == 7) {
+            if (cur.row == 7 || cur.column == 7 || cur.row == 0 || cur.column == 0) {
                 return cur;
             }
         }

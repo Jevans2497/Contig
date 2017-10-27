@@ -8,15 +8,15 @@ import java.util.Random;
  */
 public class ContigPlayer {
 
-    private int playerScore;
+    protected int playerScore;
     protected Random dice;
-    private boolean isFirstTurn;
+    protected String name;
 
 
     public ContigPlayer() {
         int playerScore = 0;
         dice = new Random();
-        isFirstTurn = true;
+        name = "Contig Player";
     }
 
     /**
@@ -29,9 +29,9 @@ public class ContigPlayer {
         double roll2 = (double)(dice.nextInt(6) + 1);
         double roll3 = (double)(dice.nextInt(6) + 1);
 
-        System.out.println("Rolls: " + roll1 + " " + roll2 + " " + roll3);
+        //System.out.println("Rolls: " + roll1 + " " + roll2 + " " + roll3);
 
-        if (isFirstTurn) {
+        if (Contig.getIsFirstTurn()) {
             playFirstTurn(roll1, roll2, roll3);
         } else {
 
@@ -52,13 +52,23 @@ public class ContigPlayer {
         gets the advantage of playing the last turn with the most chips on the board
      */
     private void playFirstTurn(double roll1, double roll2, double roll3) {
-        double rollSum = roll1 + roll2 + roll3;
-        IndexPair firstPair = findIndexByNumber((int)rollSum);
+        double rollTotal = (roll1 + roll2 + roll3) * 3;
+
+        //51 is the only number such that 3 dice rolls * 3 cannot be found on the board
+        //So this simply sets it to 50. Otherwise, every number is on the board.
+        if (rollTotal == 51) {
+            rollTotal = 50;
+        }
+        IndexPair firstPair = findIndexByNumber((int)rollTotal);
         Contig.gameBoard[firstPair.row][firstPair.column] = -1;
         playerScore+=2;
-        isFirstTurn = false;
+        Contig.setIsFirstTurn(false);
     }
 
+    /*
+    This method gets rid of all the numbers that are not on the board and all the duplicates.
+    It convers the list to a hashset in order to optimize the contains function that is used often
+     */
     protected HashSet<Integer> cleanUpListAndConvertToInt(ArrayList<Double> list) {
         HashSet<Integer> cleanList = new HashSet<>();
 
@@ -74,6 +84,13 @@ public class ContigPlayer {
         return cleanList;
     }
 
+    /*
+    This is a crucial method that determines, based on the three dice rolls, what numbers can
+    be made following the rules of the game. It creates three lists representing all of the possible
+    numbers that can be generated from the rolls , the first computing roll1 and roll2,
+    then roll1 and roll3, and roll2 and roll3. From there, it takes each computed number and calls the
+    compute function on the missing component (so roll1 after we computed the results of roll2 and roll3).
+     */
     public ArrayList<Double> getValidMoves(double roll1, double roll2, double roll3) {
         ArrayList<Double> validMovesList = new ArrayList<Double>();
         ArrayList<Double> validMovesList1 = new ArrayList<Double>();
@@ -86,33 +103,44 @@ public class ContigPlayer {
 
         for (int i = 0; i < validMovesList1.size(); i++) {
             validMovesList.addAll(compute(validMovesList1.get(i), roll3));
+        }
+        for (int i = 0; i < validMovesList2.size(); i++) {
             validMovesList.addAll(compute(validMovesList2.get(i), roll2));
+        }
+        for (int i = 0; i < validMovesList3.size(); i++) {
             validMovesList.addAll(compute(validMovesList3.get(i), roll1));
         }
 
         return validMovesList;
     }
 
+    /*
+    This crucial method returns an ArrayList containing all the operations that
+    can be done to two dice rolls (or 3 by calling it twice). Added some components
+    to avoid exceedingly large computations like checking factorial and pow for original numbers.
+     */
     public ArrayList<Double> compute(double num1, double num2) {
         ArrayList<Double> values = new ArrayList<Double>();
+        if (num1 > 2 && num1 <= 6) {
+            values.addAll(compute(factorial(num1), num2));
+        }
+        if (num2 > 2 && num2 <= 6) {
+            values.addAll(compute(factorial(num2), num1));
+        }
         values.add(num1 + num2);
         values.add(num1 - num2);
         values.add(num1 * num2);
         values.add(num2 - num1);
-
-        //NEED TO FIGURE OUT HOW ALL THIS WORKS SINCE GENERATING LISTS REQUIRES THEY ARE ARE THE SAME SIZE
-        //SHOULDN'T BE TOO DIFFICULT IF I NEED TO FIX IT.
-
-        //If we are on the third dice roll, then we want to make sure we are have a whole number
-        //in the numerator, otherwise we will get useless decimal ridden numbers
         values.add(num1 / num2);
-        //We don't need to do this a second time since we know num2 is a whole number
-        //Could this be improved by only adding the number if it is a whole number? Maybe not, figure it out later
         values.add(num2 / num1);
 
-        //Need to figure out later how to exclude values from this that are way out of range
-        values.add(Math.pow(num1, num2));
-        values.add(Math.pow(num2, num1));
+        if (num1 <= 6 || num2 <= 3 ) {
+            values.add(Math.pow(num1, num2));
+        }
+
+        if (num2 <= 6 || num1 <= 3 ) {
+            values.add(Math.pow(num2, num1));
+        }
 
         return values;
     }
@@ -171,21 +199,35 @@ We do this until we have found the best valid move.
      * @param roll
      * @return
      */
-    private IndexPair findIndexByNumber(int roll) {
-        IndexPair indP = new IndexPair(-1, -1);
+    protected IndexPair findIndexByNumber(int roll) {
+        IndexPair indP = new IndexPair(-1, -1, 0);
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
                 if (Contig.gameBoard[i][j] == roll) {
                     indP.row = i;
                     indP.column = j;
+                    indP.curScorePotential = Contig.getScorePotential(i, j);
+                    return indP;
                 }
             }
         }
         return indP;
     }
 
+    private double factorial(double num) {
+        if (num <= 1) {
+            return 1;
+        } else {
+            return num * factorial(num - 1);
+        }
+    }
+
     public int getPlayerScore() {
         return playerScore;
+    }
+
+    public void resetPlayerScore() {
+        playerScore = 0;
     }
 
     /**

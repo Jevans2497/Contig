@@ -11,6 +11,7 @@ public class ContigHighestChancePlayer extends ContigPlayer {
 
     public ContigHighestChancePlayer() {
         super();
+        name = "Contig Highest Chance Player";
         probArr = setProbArray();
     }
 
@@ -30,7 +31,7 @@ public class ContigHighestChancePlayer extends ContigPlayer {
 
             //Here we are adding each element to the list
             int findHighScores = counter;
-            while (bestMoves.get(findHighScores).curScorePotential == firstPair.curScorePotential) {
+            while (findHighScores < bestMoves.size() && bestMoves.get(findHighScores).curScorePotential == firstPair.curScorePotential) {
                 if (validMoves.contains(Contig.gameBoard[bestMoves.get(findHighScores).row][bestMoves.get(findHighScores).column])) {
                     listOfTiedTopScores.add(bestMoves.get(findHighScores));
                 }

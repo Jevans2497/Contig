@@ -1,9 +1,6 @@
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Created by jonathanevans on 8/31/17.
@@ -14,14 +11,17 @@ public class Contig {
 
     protected static int[][] gameBoard;
     private Scanner scr;
+    public static boolean isFirstTurn;
 
     //Reads the gameboard numbers from a text file. Then creates the gameboard, printing out the pre-game setup
     public Contig() {
         try {
             scr = new Scanner(new FileReader("ContigNumbers.txt"));
         } catch (FileNotFoundException fnfe){
-            System.out.println("SHit don't work bro.. It's not up to me, relax bro, I'm just tellin it how it is.");
+            System.out.println("Not good, error with reading the board number file.");
         }
+
+        isFirstTurn = true;
 
         gameBoard = createGameBoard();
     }
@@ -121,6 +121,12 @@ public class Contig {
         return bottomCounter;
     }
 
+    /*
+    Oh boy was this one a dumb bug. I spent about 2 hours trying to fix something wrong with the score using this
+    debug method. There was a very small problem but the bigger problem was that I was printing the score out for
+    the turn before I printed the board so it looked like I was getting randomish results. Left it in as a reminder
+    to not be an idiot. Functions the same as getScorePotential but prints out where it finds the values.
+     */
     public static int getScorePotentialDebug(int row, int col) {
         int scoreCounter = 0;
         if (col - 1 >= 0 && gameBoard[row][col-1] < 0) {
@@ -168,12 +174,33 @@ public class Contig {
         return scoreCounter + topCounter + bottomCounter;
     }
 
+    public static boolean getIsFirstTurn() {
+        return isFirstTurn;
+    }
+
+    public static void setIsFirstTurn(boolean val) {
+        isFirstTurn = val;
+    }
+
+    /*
+    Used this main method to test all the players and before I built the experiment class.
+     */
     public static void main (String[] args) {
-        Contig c = new Contig();
-        ContigPlayer cp = new ContigWallPlayer();
-        for (int i = 0; i < 14; i++) {
-            cp.playTurn();
-            c.printBoard();
+        ContigWallPlayer wp = new ContigWallPlayer();
+        ContigHighestChancePlayer hp = new ContigHighestChancePlayer();
+        for (int j = 0; j < 10; j++) {
+            Contig c = new Contig();
+            for (int i = 0; i < 8; i++) {
+               // hp.playTurn();
+                wp.playTurn();
+                c.printBoard();
+                //c.printBoard();
+            }
+//            System.out.println(hp.getPlayerScore());
+//            System.out.println(wp.getPlayerScore());
+//            wp.resetPlayerScore();
+//            hp.resetPlayerScore();
+//            System.out.println();
         }
     }
 }

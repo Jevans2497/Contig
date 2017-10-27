@@ -7,6 +7,7 @@ public class ContigLowestChancePlayer extends ContigHighestChancePlayer {
 
     public ContigLowestChancePlayer() {
         super();
+        name = "Contig Lowest Chance Player";
     }
 
     /*
