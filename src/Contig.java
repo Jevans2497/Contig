@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Created by jonathanevans on 8/31/17.
  *
- * This is for the algorithms project and this program is an AI that can win the game "Contig"
+ * This program is an AI that can win the game "Contig"
  */
 public class Contig {
 
