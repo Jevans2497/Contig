@@ -10,7 +10,7 @@ AI Players include
 1. Contig Player - Plays whichever move has the highest score
 2. Wall Player - Same as Contig player but will priortize moves along the wall of the board to reduce the opponents chance to score
 3. Random Player - Given all valid moves, selects one at random
-4. Lowest Chance Player - Same as Contig Player but will prioritize numbers on the board that have the lowest chance of being valid in the future (for example, if the two valid, highest scoring moves are 216 and 12, Lowest Chance Player will choose 216 since it is less likely that 216 will be valid given that 12 can be made from many different combinations of numbers)
+4. Lowest Chance Player - Same as Contig Player but will prioritize numbers on the board that have the lowest chance of being valid in the future (for example, if the two valid, highest scoring moves are 216 and 12, Lowest Chance Player will choose 216 since it is less likely that 216 will be valid given that 12 can be made from many different combinations of dice rolls)
 5. Highest Chance Player - The same as Lowest Chance Player except that it selects whichever move has the highest probability of being valid in the future. 
 
 <!--
